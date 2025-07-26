@@ -4,18 +4,110 @@
     <meta charset="UTF-8">
     <title>Projects | Sahil Patil</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .project-card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 1rem;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+        }
+        .project-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            margin-top: 2.5rem;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>🚀 Projects</h1>
     </header>
     <section>
-        <ul>
-            <li><strong>ExoFly Quadcopter</strong> – Control algorithms and Gazebo simulations for VTOL UAVs.</li>
-            <li><strong>JetAuto Robots</strong> – Autonomous navigation & object tracking with vision-based controls.</li>
-            <li><strong>CSIR-NAL Helicopter Design</strong> – Rotorcraft dynamics modelling tool for research use.</li>
-            <li><strong>Humanoid Robot – IITB THP</strong> – SLAM, navigation, and motion planning for DARwIn-OP.</li>
-        </ul>
+        <h2>🧠 Robotics & Autonomous Systems</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="images/exofly.jpg" alt="ExoFly UAV">
+                <strong>UAV Controls and Simulation</strong>
+                <p>High-fidelity Gazebo simulation for ExoFly UAV with PX4 SITL integration and mission optimization using TSP.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/humanoid.jpg" alt="Humanoid SLAM">
+                <strong>Humanoid Robot Navigation</strong>
+                <p>SLAM & autonomous navigation using ROS, Gmapping & VSLAM on Turtlebot3; control models for custom Gazebo wheelbase.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/roboticarm.jpg" alt="Robotic Arms">
+                <strong>Vishwakarma Dual Robotic Arms</strong>
+                <p>Handling controls and navigation for dual-arm humanoid entry in national robotics competition.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/quadruped.jpg" alt="Dogbot">
+                <strong>Quadrupedal Robot Simulation</strong>
+                <p>MATLAB Simulink + Simscape model of high-speed dogbot locomotion using inverse kinematics and spring-damping legs.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/wificar.jpg" alt="WiFi Car">
+                <strong>RPi WiFi Car (Mentor)</strong>
+                <p>Guided juniors on building WiFi controlled robotic car using RPi Pico and ESP01 for XLR8 competition.</p>
+            </div>
+        </div>
+
+        <h2>✈️ UAVs & Aerospace Design</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="images/amphibious.jpg" alt="Amphibious Drone">
+                <strong>Amphibious Drone</strong>
+                <p>Ballast-based UAV with seamless air-water transition, underwater Gazebo simulation, and buoy comms system.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/rcplane.jpg" alt="RC Plane">
+                <strong>RC Plane with Autopilot</strong>
+                <p>PID-controlled ESP32 autopilot, parachute deployment, and autonomous landing capability with BLDC setup.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/stol.jpg" alt="STOL Aircraft">
+                <strong>STOL Aircraft Design</strong>
+                <p>Aerodynamic toolkit with OpenVSP CAD integration and Python + ANSYS simulations for short takeoff aircraft.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/helicopter.jpg" alt="Helicopter Sim">
+                <strong>Helicopter Dynamics Simulator</strong>
+                <p>Real-time rotorcraft sim using Python, joystick interface, OpenVSP and handling qualities testing tools.</p>
+            </div>
+        </div>
+
+        <h2>🚀 Propulsion & Innovation</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="images/cubesat.jpg" alt="CubeSat Propulsion">
+                <strong>CubeSat Propulsion System</strong>
+                <p>Water electrolysis-based pulsed thrust using H2 and O2 gases, improving NanoSat maneuverability.</p>
+            </div>
+        </div>
+
+        <h2>🌌 Simulation & Theory</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="images/cloaking.jpg" alt="Optical Cloaking">
+                <strong>3D Optical Cloaking</strong>
+                <p>Transformation optics and metamaterials-based broadband cloaking simulation in theoretical framework.</p>
+            </div>
+        </div>
+
         <p><a href="index.html">← Back to Home</a></p>
     </section>
 </body>
