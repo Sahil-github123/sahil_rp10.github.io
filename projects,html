@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Sahil Patil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🚀 Projects</h1>
+    </header>
+    <section>
+        <ul>
+            <li><strong>ExoFly Quadcopter</strong> – Control algorithms and Gazebo simulations for VTOL UAVs.</li>
+            <li><strong>JetAuto Robots</strong> – Autonomous navigation & object tracking with vision-based controls.</li>
+            <li><strong>CSIR-NAL Helicopter Design</strong> – Rotorcraft dynamics modelling tool for research use.</li>
+            <li><strong>Humanoid Robot – IITB THP</strong> – SLAM, navigation, and motion planning for DARwIn-OP.</li>
+        </ul>
+        <p><a href="index.html">← Back to Home</a></p>
+    </section>
+</body>
+</html>
